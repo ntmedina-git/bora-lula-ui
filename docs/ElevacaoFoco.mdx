@@ -1,0 +1,21 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { EffectSamples, DoDont, Do, Dont } from './blocks';
+
+<Meta title="Foundations/Elevação e foco" />
+
+# Elevação e foco
+
+**A marca é chapada:** sombra só para mostrar camada (cards flutuando, menus), nunca como enfeite.
+
+**Todo elemento clicável mostra o anel de foco ao navegar pelo teclado.** Em fundo claro, 3 px branco + 3 px grafite; sobre vermelho, 3 px amarelo. Os componentes usam `:focus-visible`, então o anel não aparece no clique do mouse.
+
+<EffectSamples />
+
+<DoDont>
+  <Do>Use `box-shadow: var(--cp-focus-light)` no `:focus-visible` de qualquer elemento clicável novo.</Do>
+  <Dont>Nunca use `outline: none` sem colocar o anel de foco no lugar.</Dont>
+</DoDont>
+
+## Movimento
+
+Animações curtas, de até 200 ms (`--cp-motion`), desligadas quando o sistema pede `prefers-reduced-motion`: os tokens de duração viram 0 automaticamente.

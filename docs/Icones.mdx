@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { IconGrid } from './blocks';
+
+<Meta title="Foundations/Ícones" />
+
+# Ícones
+
+Ícones de traço com **2 px de espessura e pontas arredondadas**, do [Lucide](https://lucide.dev) (licença ISC). São os mesmos da biblioteca do Figma.
+
+```tsx
+import { MapPin } from 'lucide-react';
+<Button leadingIcon={<MapPin />}>Perto de mim</Button>
+```
+
+<IconGrid />
+
+## Regras
+
+- **Ícone sozinho precisa de nome acessível**: o `IconButton` exige `label`.
+- **Na barra de abas, sempre com rótulo** embaixo.
+- Ícone decorativo ao lado de texto recebe `aria-hidden` (os componentes já fazem isso).
+- 24 px na navegação, 20 px dentro de botões e campos, 16 px em metadados.

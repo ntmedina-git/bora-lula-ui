@@ -1,0 +1,35 @@
+/* Estilos globais da biblioteca: tokens, tipografia e base.
+   A fonte fica em fonts.css (importe uma vez no app): só os pesos 500, 700, 800 e 900, com font-display: swap. */
+@import './tokens.css';
+@import './typography.css';
+
+.cp-root,
+:where(body.cp-body) {
+  font-family: var(--cp-font);
+  font-size: var(--cp-text-md);
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--cp-color-on-surface);
+  -webkit-font-smoothing: antialiased;
+}
+:where(body.cp-body) { background: var(--cp-color-surface); }
+
+/* Esconde visualmente mas mantém para leitores de tela */
+.cp-visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* Container de conteúdo: máx. 1200 px, margens do grid */
+.cp-container {
+  width: 100%;
+  max-width: calc(var(--cp-content-max) + 2 * var(--cp-space-4));
+  margin-inline: auto;
+  padding-inline: var(--cp-space-4);
+  box-sizing: border-box;
+}
+@media (min-width: 768px) { .cp-container { padding-inline: var(--cp-space-6); max-width: calc(var(--cp-content-max) + 2 * var(--cp-space-6)); } }
+@media (min-width: 1024px) { .cp-container { padding-inline: var(--cp-space-8); max-width: calc(var(--cp-content-max) + 2 * var(--cp-space-8)); } }

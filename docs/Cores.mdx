@@ -1,0 +1,49 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { PrimitiveSwatches, RoleSwatches, ContrastTable } from './blocks';
+
+<Meta title="Foundations/Cores" />
+
+# Cores
+
+As cores entram na interface como tokens com nome e função. **Primitivos** guardam os valores; **papéis semânticos** (no estilo dos color roles do M3) dizem onde usar. Os componentes só usam papéis.
+
+Algumas cores do logo não passam no contraste mínimo com texto branco. **Para texto e botões, use as versões 700.**
+
+## Papéis semânticos
+
+Cada cor de fundo tem um par `on-` para o conteúdo que fica por cima.
+
+### Marca
+<RoleSwatches filter={(n) => /primary|secondary|tertiary|highlight/.test(n) && !n.includes('focus')} />
+
+### Superfície, texto e borda
+<RoleSwatches filter={(n) => /surface|outline/.test(n)} />
+
+### Estados
+<RoleSwatches filter={(n) => /disabled|focus|error/.test(n) && !n.includes('feedback')} />
+
+### Feedback
+<RoleSwatches filter={(n) => n.includes('feedback')} />
+
+## Contraste (WCAG AA)
+
+Calculado a partir dos tokens. Texto normal precisa de **4,5:1**; controles e texto grande (a partir de 24 px, ou 18,5 px em negrito), **3:1**.
+
+<ContrastTable />
+
+> **O amarelo nunca vai como texto, ícone ou borda sobre fundo branco.** Sobre vermelho, só em texto grande (como o "15" de "Faltam 15 dias").
+
+## Primitivos
+
+Valores crus da marca. No Figma ficam escondidos dos seletores; no código, prefira sempre o papel.
+
+### Vermelho
+<PrimitiveSwatches family="red" />
+### Verde
+<PrimitiveSwatches family="green" />
+### Amarelo
+<PrimitiveSwatches family="yellow" />
+### Azul
+<PrimitiveSwatches family="blue" />
+### Neutros
+<PrimitiveSwatches family="neutral" />

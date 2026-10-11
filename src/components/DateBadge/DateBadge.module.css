@@ -1,0 +1,15 @@
+.badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 48px;
+  padding: var(--cp-space-2) var(--cp-space-3);
+  box-sizing: border-box;
+  border-radius: var(--cp-radius-md);
+  background: var(--cp-color-surface);
+  color: var(--cp-color-on-surface);
+  font-family: var(--cp-font);
+}
+.day { font-size: 24px; font-weight: 900; line-height: 1; }
+.month { font-size: var(--cp-text-xs); font-weight: 800; letter-spacing: 0.08em; line-height: 1; }

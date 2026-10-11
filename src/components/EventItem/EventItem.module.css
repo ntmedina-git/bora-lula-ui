@@ -1,0 +1,7 @@
+.item { display: flex; flex-direction: column; gap: var(--cp-space-2); padding: var(--cp-space-4); border-radius: var(--cp-radius-md); font-family: var(--cp-font); }
+.overline { margin: 0; font: 800 var(--cp-text-xs) / 1.2 var(--cp-font); letter-spacing: 0.08em; text-transform: uppercase; }
+.title { margin: 0; font: 800 var(--cp-text-title) / 1.25 var(--cp-font); }
+.action { padding-top: var(--cp-space-1); }
+.featured { background: var(--cp-color-primary); color: var(--cp-color-on-primary); }
+.default { background: var(--cp-color-surface); color: var(--cp-color-on-surface); box-shadow: var(--cp-shadow-1); }
+.default .overline { color: var(--cp-color-on-surface-variant); }

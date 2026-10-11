@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Grid" />
+
+# Grid e breakpoints
+
+**Desenhe primeiro para o celular.** Conteúdo com largura máxima de 1200 px, centralizado. Use a classe `.cp-container`, que já aplica as margens de cada breakpoint.
+
+| Nome | A partir de | Colunas | Margem | Gutter |
+| --- | --- | --- | --- | --- |
+| sm · celular | 0 | 4 | 16 px | 16 px |
+| md · tablet | 768 px | 8 | 24 px | 24 px |
+| lg · notebook | 1024 px | 12 | 32 px | 24 px |
+| xl · desktop | 1280 px | 12 | auto (máx. 1200) | 24 px |
+
+```css
+@media (min-width: 768px)  { /* md */ }
+@media (min-width: 1024px) { /* lg: a navegação mostra os links */ }
+@media (min-width: 1280px) { /* xl */ }
+```
+
+No Figma, use os estilos de grid `Grid/sm`, `Grid/md`, `Grid/lg` e `Grid/xl` nos frames de tela.

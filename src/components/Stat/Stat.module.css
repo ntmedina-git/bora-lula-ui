@@ -1,0 +1,7 @@
+.stat { display: flex; flex-direction: column; gap: var(--cp-space-1); min-width: 120px; font-family: var(--cp-font); }
+.value { font-size: var(--cp-text-h1); font-weight: 900; line-height: 1.1; }
+.label { font-size: var(--cp-text-sm-strong); font-weight: 700; line-height: 1.45; }
+.light .value { color: var(--cp-color-primary); }
+.light .label { color: var(--cp-color-on-surface-variant); }
+.red .value { color: var(--cp-color-highlight); }
+.red .label { color: var(--cp-color-on-primary); }

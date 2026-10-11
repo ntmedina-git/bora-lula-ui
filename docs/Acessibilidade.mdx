@@ -1,0 +1,20 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Regras/Acessibilidade e qualidade" />
+
+# Checklist antes de publicar
+
+Cada item vem do Guia de Interface. Todas as histórias deste Storybook passam pelo axe (aba **Accessibility** e `npm test`), e o contraste dos tokens é testado automaticamente.
+
+| | Regra | Como a biblioteca ajuda |
+| --- | --- | --- |
+| ☐ | **Contraste conferido.** Texto normal com 4,5:1 e controles com 3:1. Verde e azul de texto sempre na versão 700. | Papéis `secondary` e `tertiary` já são os 700; teste de contraste nos tokens. |
+| ☐ | **Foco visível.** Todo elemento clicável mostra o anel de foco no teclado. Nunca `outline: none` sem substituto. | `:focus-visible` com `--cp-focus-light` / `--cp-focus-red` em todos os componentes. |
+| ☐ | **Alvos de toque de 44 px** no celular. | `--cp-size-touch`; botões, segmentos, checkbox e links da navegação têm 44 px. |
+| ☐ | **Não depender só da cor.** Erros, status e abas ativas também têm ícone, texto ou sublinhado. | Alert e TextField com ícone; abas e navegação com sublinhado; seleção com check. |
+| ☐ | **Imagens com texto alternativo.** Fotos de atos descrevem a cena. O logo usa `alt="Comitê Popular do Lula"`. | `Logo` já vem com o alt; `BrandStripes` é decorativo e escondido. |
+| ☐ | **Formulários claros.** Rótulos visíveis, `autocomplete` e erros que dizem como corrigir. | `TextField` exige `label` e liga ajuda/erro por `aria-describedby`. |
+| ☐ | **Leve para conexões fracas.** WebP/AVIF com `loading="lazy"`, só os pesos de fonte usados, página inicial abaixo de 1 MB. | `fonts.css` carrega só 4 pesos do subconjunto latino; CSS da biblioteca com ~26 KB. |
+| ☐ | **Movimento opcional.** Até 200 ms e desligado com `prefers-reduced-motion`. | Tokens de duração zeram sozinhos. |
+| ☐ | **Idioma e leitura.** `lang="pt-BR"`, frases curtas, verbos de ação nos botões. | Textos internos dos componentes já em pt-BR ("Fechar aviso", "Abrir menu"). |
+| ☐ | **Testado no celular de verdade.** Android de entrada, tela de 360 px, antes de divulgar o link. | Viewport "Android de entrada (360)" na barra do Storybook. |

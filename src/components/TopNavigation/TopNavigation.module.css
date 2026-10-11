@@ -1,0 +1,52 @@
+.bar {
+  --_fg: var(--cp-color-on-surface);
+  --_indicator: var(--cp-color-primary);
+  --_focus: var(--cp-focus-light);
+  font-family: var(--cp-font);
+  color: var(--_fg);
+}
+.light { background: var(--cp-color-surface); border-bottom: var(--cp-border-width) solid var(--cp-color-outline-variant); }
+.red { background: var(--cp-color-primary); --_fg: var(--cp-color-on-primary); --_indicator: var(--cp-color-highlight); --_focus: var(--cp-focus-red); }
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: var(--cp-space-4);
+  max-width: var(--cp-content-max);
+  min-height: 72px;
+  margin-inline: auto;
+  padding: var(--cp-space-2) var(--cp-space-4);
+  box-sizing: content-box;
+}
+.logo { display: inline-flex; border-radius: var(--cp-radius-sm); }
+.logo:focus-visible { outline: none; box-shadow: var(--_focus); }
+.spacer { flex: 1; }
+.links { display: flex; gap: var(--cp-space-6); margin: 0; padding: 0; list-style: none; }
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--cp-size-touch);
+  padding: 0 var(--cp-space-2);
+  border-bottom: 3px solid transparent;
+  color: var(--_fg);
+  font: 700 var(--cp-text-label-md) / 1 var(--cp-font);
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.link:hover { border-bottom-color: currentColor; }
+.link:focus-visible { outline: none; box-shadow: var(--_focus); border-radius: var(--cp-radius-sm); }
+.current, .current:hover { border-bottom-color: var(--_indicator); }
+
+.desktopNav, .cta { display: none; }
+.menuButton { display: inline-grid; }
+.mobileNav { padding: 0 var(--cp-space-4) var(--cp-space-4); }
+.mobileList { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.mobileList .link { width: 100%; font-size: var(--cp-text-label-lg); border-bottom: var(--cp-border-width) solid color-mix(in srgb, currentColor 20%, transparent); }
+.mobileList .current { border-bottom: 3px solid var(--_indicator); }
+
+@media (min-width: 480px) { .cta { display: block; } }
+@media (min-width: 1024px) {
+  .inner { padding-inline: var(--cp-space-8); gap: var(--cp-space-8); }
+  .desktopNav { display: block; }
+  .menuButton, .mobileNav { display: none; }
+}

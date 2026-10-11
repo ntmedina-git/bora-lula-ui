@@ -1,0 +1,40 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { BrandStripes, Button, Logo, Tag } from '../src';
+
+<Meta title="Introdução" />
+
+<div className="sb-unstyled" style={{ position: 'relative', overflow: 'hidden', borderRadius: 16, background: 'var(--cp-color-primary)', color: 'var(--cp-color-on-primary)', padding: '48px 40px', margin: '8px 0 32px' }}>
+  <div style={{ position: 'absolute', inset: '0 0 0 auto', width: '45%' }}><BrandStripes base="red" /></div>
+  <div style={{ position: 'relative', display: 'grid', justifyItems: 'start', gap: 20, maxWidth: 560 }}>
+    <Logo size={88} />
+    <Tag tone="urgent">Versão 0.1 · outubro de 2026</Tag>
+    <div className="cp-text-display">Bora Lula · Design System</div>
+    <p className="cp-text-body-large" style={{ margin: 0 }}>Tokens, componentes React e regras de acessibilidade para levar a identidade do Comitê para sites e aplicativos.</p>
+  </div>
+</div>
+
+## Como este guia está organizado
+
+Inspirado no Material 3: **primitivos → papéis semânticos → componentes**. Cada cor tem nome e função, e os componentes só usam os papéis.
+
+- **Começando** — instalar o pacote, importar os estilos, usar com Tailwind.
+- **Foundations** — cores e contraste, tipografia, espaço e forma, elevação e foco, grid e ícones.
+- **Regras** — checklist de acessibilidade e qualidade, e como escrever.
+- **Componentes** — cada componente com controles, estados e as regras de uso.
+- **Exemplos** — a home do boralula.org montada só com a biblioteca.
+
+## Fonte da verdade
+
+1. **Figma (Bora-Lula · frame Library)** — variáveis, estilos e componentes desenhados.
+2. **`tokens/figma-export.json`** — exportado das variáveis do Figma. O script `npm run tokens` gera `tokens.css`, `tokens.json` (formato DTCG) e o preset do Tailwind.
+3. **Este Storybook** — os componentes reais, com testes de acessibilidade em todas as histórias.
+
+Mudou uma cor no Figma? Exporte de novo, rode `npm run tokens` e todos os componentes acompanham.
+
+## Princípios
+
+- **Mobile first.** Desenhe e teste primeiro num Android de entrada com tela de 360 px.
+- **A marca é chapada.** Sombra só para mostrar camada, nunca como enfeite.
+- **Um primário por bloco.** Uma ação principal em vermelho; o resto em contorno ou link.
+- **Não dependa só da cor.** Erros, status e abas ativas também têm ícone, texto ou sublinhado.
+- **Leve para conexões fracas.** Página inicial abaixo de 1 MB, só os pesos de fonte usados.

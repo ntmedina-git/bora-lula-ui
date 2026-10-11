@@ -1,0 +1,25 @@
+.link {
+  --_fg: var(--cp-color-primary);
+  --_fg-hover: var(--cp-color-primary-pressed);
+  --_focus: var(--cp-focus-light);
+  --_focus-bg: var(--cp-color-surface);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cp-space-1);
+  padding: 2px 4px;
+  margin: -2px -4px;
+  border-radius: var(--cp-radius-sm);
+  color: var(--_fg);
+  font: 700 var(--cp-text-label-md) / 1.45 var(--cp-font);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  cursor: pointer;
+}
+.link:hover { color: var(--_fg-hover); text-decoration-thickness: 2px; }
+.link:focus-visible { outline: none; background: var(--_focus-bg); box-shadow: var(--_focus); }
+.icon { width: 16px; height: 16px; flex: none; }
+
+.tertiary { --_fg: var(--cp-color-tertiary); --_fg-hover: var(--cp-color-tertiary-hover); }
+.on-red { --_fg: var(--cp-color-on-primary); --_fg-hover: var(--cp-color-on-primary); --_focus: var(--cp-focus-red); --_focus-bg: var(--cp-color-primary); }
+.on-red:hover { background: var(--cp-color-primary-hover); }

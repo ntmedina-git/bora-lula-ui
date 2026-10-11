@@ -1,0 +1,18 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import { TypeScale } from './blocks';
+
+<Meta title="Foundations/Tipografia" />
+
+# Tipografia
+
+Montserrat em escala fluida. Os títulos crescem com a tela via `clamp()` (entre 360 e 1280 px); o corpo fica fixo em 16 px. Carregue só os pesos **500, 700, 800 e 900** com `font-display: swap` (o `fonts.css` do pacote já faz isso).
+
+No Figma há um estilo para mobile e outro para desktop, porque o Figma não tem clamp. No código, uma classe só resolve os dois.
+
+<TypeScale />
+
+## Regras
+
+- **Caixa-alta só em títulos de destaque e rótulos curtos**, nunca em parágrafos.
+- **Linhas de texto com no máximo 70 caracteres.** Use `max-width: 70ch` em blocos de leitura.
+- Um `h1` por página. Os níveis de título seguem a estrutura, não o tamanho: ajuste o tamanho com a classe.

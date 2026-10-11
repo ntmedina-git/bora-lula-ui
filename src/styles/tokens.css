@@ -1,0 +1,130 @@
+/* Gerado por scripts/build-tokens.mjs a partir das variáveis do Figma. Não edite à mão. */
+:root {
+  /* Primitivos — valores crus. Prefira os papéis semânticos abaixo. */
+  --cp-red-50: #FDE8E8;
+  --cp-red-500: #C3090A;
+  --cp-red-600: #A00708;
+  --cp-red-700: #8E0607;
+  --cp-green-50: #E3F4E7;
+  --cp-green-500: #0B912A;
+  --cp-green-700: #087A23;
+  --cp-green-900: #06601C;
+  --cp-yellow-50: #FFF6CC;
+  --cp-yellow-400: #FBCE02;
+  --cp-yellow-900: #6B5300;
+  --cp-blue-50: #E1F1FA;
+  --cp-blue-500: #048ED6;
+  --cp-blue-700: #0270AA;
+  --cp-blue-900: #015A8A;
+  --cp-white: #FFFFFF;
+  --cp-surface-alt: #F3F1EE;
+  --cp-border: #D9D4CC;
+  --cp-border-strong: #8A847B;
+  --cp-ink-muted: #5E5E5E;
+  --cp-ink: #2A2A2A;
+  --cp-ink-60: #2A2A2A99;
+
+  /* Papéis semânticos (estilo M3) */
+  --cp-color-primary: var(--cp-red-500); /* Primária: botões, links, cabeçalhos */
+  --cp-color-primary-hover: var(--cp-red-600); /* Hover da primária */
+  --cp-color-primary-pressed: var(--cp-red-700); /* Pressionado */
+  --cp-color-on-primary: var(--cp-white); /* Texto e ícone sobre a primária */
+  --cp-color-primary-container: var(--cp-red-50); /* Fundo suave de seleção */
+  --cp-color-on-primary-container: var(--cp-red-700); /* Conteúdo sobre primary-container */
+  --cp-color-secondary: var(--cp-green-700); /* Ação de apoio, texto verde */
+  --cp-color-secondary-hover: var(--cp-green-900); /* Hover da secundária */
+  --cp-color-on-secondary: var(--cp-white); /* Conteúdo sobre a secundária */
+  --cp-color-secondary-accent: var(--cp-green-500); /* Bloco de destaque e ilustração. Texto branco só grande */
+  --cp-color-tertiary: var(--cp-blue-700); /* Links e botões azuis */
+  --cp-color-tertiary-hover: var(--cp-blue-900); /* Hover de links e botões azuis */
+  --cp-color-on-tertiary: var(--cp-white); /* Conteúdo sobre a terciária */
+  --cp-color-tertiary-accent: var(--cp-blue-500); /* Ilustração e ícones grandes */
+  --cp-color-highlight: var(--cp-yellow-400); /* Tarjas, bordas e foco sobre vermelho. Nunca sobre branco */
+  --cp-color-on-highlight: var(--cp-ink); /* Texto sobre amarelo */
+  --cp-color-surface: var(--cp-white); /* Fundo padrão */
+  --cp-color-surface-container: var(--cp-surface-alt); /* Fundo de seções, telas e trilhas */
+  --cp-color-on-surface: var(--cp-ink); /* Texto principal */
+  --cp-color-on-surface-variant: var(--cp-ink-muted); /* Texto secundário */
+  --cp-color-on-surface-inactive: var(--cp-ink-60); /* Abas inativas (grafite 60%) */
+  --cp-color-outline: var(--cp-border-strong); /* Borda de inputs e controles (3:1) */
+  --cp-color-outline-variant: var(--cp-border); /* Divisórias e borda de cards */
+  --cp-color-disabled-container: var(--cp-border); /* Fundo de controle desabilitado */
+  --cp-color-on-disabled: var(--cp-border-strong); /* Conteúdo desabilitado */
+  --cp-color-focus-ring: var(--cp-ink); /* Anel de foco em fundo claro */
+  --cp-color-focus-ring-on-primary: var(--cp-yellow-400); /* Anel de foco sobre vermelho */
+  --cp-color-error: var(--cp-red-700); /* Texto e borda de erro */
+  --cp-success-bg: var(--cp-green-50); /* Fundo de sucesso */
+  --cp-success-text: var(--cp-green-900); /* Texto de sucesso */
+  --cp-warning-bg: var(--cp-yellow-50); /* Fundo de atenção */
+  --cp-warning-text: var(--cp-yellow-900); /* Texto de atenção */
+  --cp-danger-bg: var(--cp-red-50); /* Fundo de erro */
+  --cp-danger-text: var(--cp-red-700); /* Texto de erro */
+  --cp-info-bg: var(--cp-blue-50); /* Fundo informativo */
+  --cp-info-text: var(--cp-blue-900); /* Texto informativo */
+
+  /* Espaçamento (base 4 px) */
+  --cp-space-0: 0;
+  --cp-space-1: 4px;
+  --cp-space-2: 8px;
+  --cp-space-3: 12px;
+  --cp-space-4: 16px; /* Padding de cards */
+  --cp-space-6: 24px; /* Gutter */
+  --cp-space-8: 32px;
+  --cp-space-12: 48px; /* Entre seções (mobile) */
+  --cp-space-16: 64px; /* Entre seções (desktop) */
+
+  /* Raios */
+  --cp-radius-none: 0;
+  --cp-radius-sm: 4px; /* Tags */
+  --cp-radius-md: 8px; /* Cards e campos */
+  --cp-radius-lg: 16px; /* Modais */
+  --cp-radius-pill: 999px; /* Botões */
+
+  /* Tamanhos */
+  --cp-size-touch: 44px; /* Área de toque mínima */
+  --cp-size-control-sm: 36px; /* Só desktop */
+  --cp-size-control-md: 44px; /* Padrão */
+  --cp-size-control-lg: 52px;
+  --cp-size-icon-sm: 20px;
+  --cp-size-icon-md: 24px;
+  --cp-size-logo-min: 120px; /* Largura mínima do logo */
+
+  /* Bordas */
+  --cp-border-width: 1px;
+  --cp-border-width-strong: 2px;
+  --cp-border-width-accent: 4px; /* Faixa lateral de alertas e sublinhado ativo */
+
+  /* Tipografia — títulos fluidos entre 360 e 1280 px */
+  --cp-font: "Montserrat", system-ui, sans-serif;
+  --cp-text-display: clamp(2.25rem, 1.7609rem + 2.174vw, 3.5rem);
+  --cp-text-h1: clamp(2rem, 1.8043rem + 0.87vw, 2.5rem);
+  --cp-text-h2: clamp(1.625rem, 1.4783rem + 0.652vw, 2rem);
+  --cp-text-h3: clamp(1.25rem, 1.1522rem + 0.435vw, 1.5rem);
+  --cp-text-title: 1rem;
+  --cp-text-lg: 1.125rem;
+  --cp-text-md: 1rem;
+  --cp-text-sm: 0.875rem;
+  --cp-text-sm-strong: 0.875rem;
+  --cp-text-label-lg: 1rem;
+  --cp-text-label-md: 0.875rem;
+  --cp-text-xs: 0.75rem;
+  --cp-text-tab: 0.75rem;
+
+  /* Sombras e foco */
+  --cp-shadow-1: 0 1px 2px #2A2A2A14, 0 2px 6px #2A2A2A0F;
+  --cp-shadow-2: 0 1px 3px #2A2A2A14, 0 4px 12px #2A2A2A1F;
+  --cp-focus-light: 0 0 0 3px #FFFFFF, 0 0 0 6px #2A2A2A;
+  --cp-focus-red: 0 0 0 3px #FBCE02;
+
+  /* Breakpoints (referência; use em media queries) */
+  --cp-bp-md: 768px;
+  --cp-bp-lg: 1024px;
+  --cp-bp-xl: 1280px;
+  --cp-content-max: 1200px;
+  --cp-motion-fast: 120ms;
+  --cp-motion: 200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --cp-motion-fast: 0ms; --cp-motion: 0ms; }
+}

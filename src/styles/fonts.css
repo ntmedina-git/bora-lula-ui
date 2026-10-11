@@ -1,0 +1,5 @@
+/* Montserrat: só os pesos usados (500, 700, 800, 900). O @fontsource já usa font-display: swap. */
+@import '@fontsource/montserrat/latin-500.css';
+@import '@fontsource/montserrat/latin-700.css';
+@import '@fontsource/montserrat/latin-800.css';
+@import '@fontsource/montserrat/latin-900.css';

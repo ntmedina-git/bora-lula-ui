@@ -1,0 +1,29 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cp-space-3);
+  min-height: var(--cp-size-touch);
+  font: 500 var(--cp-text-md) / 1.4 var(--cp-font);
+  color: var(--cp-color-on-surface);
+  cursor: pointer;
+}
+.boxWrap { position: relative; display: inline-flex; flex: none; }
+.input { position: absolute; inset: -12px; width: 44px; height: 44px; margin: 0; opacity: 0; cursor: inherit; }
+.box {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: var(--cp-border-width-strong) solid var(--cp-color-outline);
+  border-radius: var(--cp-radius-sm);
+  background: var(--cp-color-surface);
+  color: var(--cp-color-on-primary);
+}
+.check { display: none; width: 16px; height: 16px; }
+.input:checked + .box { background: var(--cp-color-primary); border-color: var(--cp-color-primary); }
+.input:checked + .box .check { display: block; }
+.input:focus-visible + .box { box-shadow: var(--cp-focus-light); }
+.input:disabled + .box { border-color: var(--cp-color-disabled-container); }
+.input:disabled:checked + .box { background: var(--cp-color-disabled-container); color: var(--cp-color-on-disabled); }
+.row:has(.input:disabled) { color: var(--cp-color-on-disabled); cursor: not-allowed; }

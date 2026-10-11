@@ -1,0 +1,26 @@
+import { create } from 'storybook/theming/create';
+
+export default create({
+  base: 'light',
+  brandTitle: 'Bora Lula · Design System',
+  brandUrl: 'https://boralula.org',
+  brandImage: './assets/logo-bora-lula.png',
+  brandTarget: '_blank',
+  fontBase: '"Montserrat", system-ui, sans-serif',
+  fontCode: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+  colorPrimary: '#C3090A',
+  colorSecondary: '#C3090A',
+  appBg: '#F3F1EE',
+  appContentBg: '#FFFFFF',
+  appPreviewBg: '#FFFFFF',
+  appBorderColor: '#D9D4CC',
+  appBorderRadius: 8,
+  textColor: '#2A2A2A',
+  textMutedColor: '#5E5E5E',
+  barTextColor: '#5E5E5E',
+  barSelectedColor: '#C3090A',
+  barHoverColor: '#A00708',
+  barBg: '#FFFFFF',
+  inputBorder: '#8A847B',
+  inputBorderRadius: 8,
+});

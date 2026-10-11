@@ -1,0 +1,4 @@
+.track { position: relative; height: 8px; border-radius: var(--cp-radius-pill); background: var(--cp-color-surface-container); overflow: hidden; }
+.indicator { height: 100%; border-radius: var(--cp-radius-pill); transition: width var(--cp-motion) ease; }
+.primary { background: var(--cp-color-primary); }
+.secondary { background: var(--cp-color-secondary); }

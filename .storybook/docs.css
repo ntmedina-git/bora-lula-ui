@@ -1,0 +1,5 @@
+/* Ajustes das páginas de documentação para usar a identidade */
+.sbdocs-wrapper { font-family: 'Montserrat', system-ui, sans-serif; }
+.sbdocs.sbdocs-h1 { font-weight: 900; letter-spacing: 0; }
+.sbdocs.sbdocs-h2 { font-weight: 800; border-bottom-color: #D9D4CC; }
+.sbdocs.sbdocs-a { color: #0270AA; text-decoration: underline; }

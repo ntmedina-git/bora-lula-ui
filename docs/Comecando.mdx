@@ -1,0 +1,86 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Começando" />
+
+# Começando
+
+## Instalar
+
+```bash
+npm install @boralula/ui
+```
+
+O pacote depende de `react` (18 ou 19) e usa ícones do [lucide-react](https://lucide.dev), que já vem como dependência.
+
+## Importar os estilos uma vez
+
+```tsx
+// main.tsx
+import '@boralula/ui/fonts.css';   // Montserrat 500, 700, 800 e 900 (font-display: swap)
+import '@boralula/ui/styles.css';  // tokens, tipografia e estilos dos componentes
+```
+
+Coloque `lang="pt-BR"` no `<html>` e a classe `cp-root` (ou `cp-body` no `<body>`) para herdar a fonte e as cores.
+
+## Usar um componente
+
+```tsx
+import { Button, TextField } from '@boralula/ui';
+import { MapPin } from 'lucide-react';
+
+export function Busca() {
+  return (
+    <form role="search">
+      <TextField label="Cidade, candidato, evento ou material" type="search" />
+      <Button leadingIcon={<MapPin />}>Perto de mim</Button>
+    </form>
+  );
+}
+```
+
+## Só os tokens
+
+Sem React? Use direto as variáveis CSS, com os mesmos nomes do guia:
+
+```css
+@import '@boralula/ui/tokens.css';
+
+.minha-chamada {
+  background: var(--cp-color-primary);
+  color: var(--cp-color-on-primary);
+  border-radius: var(--cp-radius-pill);
+  padding: 0 var(--cp-space-6);
+  min-height: var(--cp-size-touch);
+}
+.minha-chamada:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+```
+
+## Tailwind
+
+```js
+// tailwind.config.js
+module.exports = {
+  presets: [require('@boralula/ui/tailwind-preset')],
+};
+```
+
+```html
+<button class="min-h-11 px-cp-6 rounded-cp-pill bg-cp-primary text-cp-on-primary font-bold hover:bg-cp-primary-hover focus-visible:shadow-cp-focus">
+  Faça parte
+</button>
+```
+
+## Desenvolver a biblioteca
+
+```bash
+npm install
+npm run dev              # Storybook em http://localhost:6006
+npm run tokens           # regenera tokens a partir de tokens/figma-export.json
+npm test                 # testes de acessibilidade (axe) em todas as histórias + contraste dos tokens
+npm run build            # dist/ com index.js, styles.css, tokens.css, fonts.css e tipos
+npm run build-storybook  # site estático deste guia em storybook-static/
+```
+
+## Publicar no zeroheight (opcional)
+
+Publique o `storybook-static` (GitHub Pages, Netlify ou Chromatic) e use a integração de Storybook do zeroheight para incorporar as histórias nas páginas do guia. Os tokens podem ir junto pelo `tokens/tokens.json`.

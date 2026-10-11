@@ -1,0 +1,2 @@
+.step { display: flex; flex-direction: column; gap: var(--cp-space-2); }
+.label { color: var(--cp-color-primary); font: 800 var(--cp-text-xs) / 1 var(--cp-font); letter-spacing: 0.08em; text-transform: uppercase; }

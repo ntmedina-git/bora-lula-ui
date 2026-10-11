@@ -1,0 +1,27 @@
+.button {
+  --_bg: transparent;
+  --_bg-hover: var(--cp-color-surface-container);
+  --_fg: var(--cp-color-on-surface);
+  --_focus: var(--cp-focus-light);
+  --_focus-bg: var(--cp-color-surface);
+  display: inline-grid;
+  place-items: center;
+  width: var(--cp-size-touch);
+  height: var(--cp-size-touch);
+  padding: 0;
+  border: 0;
+  border-radius: var(--cp-radius-pill);
+  background: var(--_bg);
+  color: var(--_fg);
+  cursor: pointer;
+  transition: background-color var(--cp-motion-fast) ease, box-shadow var(--cp-motion-fast) ease;
+}
+.button:hover { background: var(--_bg-hover); }
+.button:focus-visible { outline: none; background: var(--_focus-bg); box-shadow: var(--_focus); }
+.button:disabled { --_fg: var(--cp-color-on-disabled); background: transparent; cursor: not-allowed; }
+.icon { display: inline-flex; }
+.icon > svg { width: var(--cp-size-icon-md); height: var(--cp-size-icon-md); }
+
+.filled { --_bg: var(--cp-color-primary); --_bg-hover: var(--cp-color-primary-hover); --_fg: var(--cp-color-on-primary); --_focus-bg: var(--cp-color-primary); }
+.filled:disabled { background: var(--cp-color-disabled-container); }
+.on-red { --_bg-hover: var(--cp-color-primary-hover); --_fg: var(--cp-color-on-primary); --_focus: var(--cp-focus-red); --_focus-bg: var(--cp-color-primary); }

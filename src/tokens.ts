@@ -1,0 +1,793 @@
+/* Gerado por scripts/build-tokens.mjs. */
+export const tokens = {
+  "primitives": [
+    {
+      "name": "red/50",
+      "type": "COLOR",
+      "value": "#FDE8E8",
+      "alias": null,
+      "css": "--cp-red-50",
+      "description": ""
+    },
+    {
+      "name": "red/500",
+      "type": "COLOR",
+      "value": "#C3090A",
+      "alias": null,
+      "css": "--cp-red-500",
+      "description": ""
+    },
+    {
+      "name": "red/600",
+      "type": "COLOR",
+      "value": "#A00708",
+      "alias": null,
+      "css": "--cp-red-600",
+      "description": ""
+    },
+    {
+      "name": "red/700",
+      "type": "COLOR",
+      "value": "#8E0607",
+      "alias": null,
+      "css": "--cp-red-700",
+      "description": ""
+    },
+    {
+      "name": "green/50",
+      "type": "COLOR",
+      "value": "#E3F4E7",
+      "alias": null,
+      "css": "--cp-green-50",
+      "description": ""
+    },
+    {
+      "name": "green/500",
+      "type": "COLOR",
+      "value": "#0B912A",
+      "alias": null,
+      "css": "--cp-green-500",
+      "description": ""
+    },
+    {
+      "name": "green/700",
+      "type": "COLOR",
+      "value": "#087A23",
+      "alias": null,
+      "css": "--cp-green-700",
+      "description": ""
+    },
+    {
+      "name": "green/900",
+      "type": "COLOR",
+      "value": "#06601C",
+      "alias": null,
+      "css": "--cp-green-900",
+      "description": ""
+    },
+    {
+      "name": "yellow/50",
+      "type": "COLOR",
+      "value": "#FFF6CC",
+      "alias": null,
+      "css": "--cp-yellow-50",
+      "description": ""
+    },
+    {
+      "name": "yellow/400",
+      "type": "COLOR",
+      "value": "#FBCE02",
+      "alias": null,
+      "css": "--cp-yellow-400",
+      "description": ""
+    },
+    {
+      "name": "yellow/900",
+      "type": "COLOR",
+      "value": "#6B5300",
+      "alias": null,
+      "css": "--cp-yellow-900",
+      "description": ""
+    },
+    {
+      "name": "blue/50",
+      "type": "COLOR",
+      "value": "#E1F1FA",
+      "alias": null,
+      "css": "--cp-blue-50",
+      "description": ""
+    },
+    {
+      "name": "blue/500",
+      "type": "COLOR",
+      "value": "#048ED6",
+      "alias": null,
+      "css": "--cp-blue-500",
+      "description": ""
+    },
+    {
+      "name": "blue/700",
+      "type": "COLOR",
+      "value": "#0270AA",
+      "alias": null,
+      "css": "--cp-blue-700",
+      "description": ""
+    },
+    {
+      "name": "blue/900",
+      "type": "COLOR",
+      "value": "#015A8A",
+      "alias": null,
+      "css": "--cp-blue-900",
+      "description": ""
+    },
+    {
+      "name": "neutral/white",
+      "type": "COLOR",
+      "value": "#FFFFFF",
+      "alias": null,
+      "css": "--cp-white",
+      "description": ""
+    },
+    {
+      "name": "neutral/50",
+      "type": "COLOR",
+      "value": "#F3F1EE",
+      "alias": null,
+      "css": "--cp-surface-alt",
+      "description": ""
+    },
+    {
+      "name": "neutral/200",
+      "type": "COLOR",
+      "value": "#D9D4CC",
+      "alias": null,
+      "css": "--cp-border",
+      "description": ""
+    },
+    {
+      "name": "neutral/500",
+      "type": "COLOR",
+      "value": "#8A847B",
+      "alias": null,
+      "css": "--cp-border-strong",
+      "description": ""
+    },
+    {
+      "name": "neutral/700",
+      "type": "COLOR",
+      "value": "#5E5E5E",
+      "alias": null,
+      "css": "--cp-ink-muted",
+      "description": ""
+    },
+    {
+      "name": "neutral/900",
+      "type": "COLOR",
+      "value": "#2A2A2A",
+      "alias": null,
+      "css": "--cp-ink",
+      "description": ""
+    },
+    {
+      "name": "neutral/900-a60",
+      "type": "COLOR",
+      "value": "#2A2A2A99",
+      "alias": null,
+      "css": "--cp-ink-60",
+      "description": ""
+    }
+  ],
+  "color": [
+    {
+      "name": "color/primary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/500",
+      "css": "--cp-color-primary",
+      "description": "Primária: botões, links, cabeçalhos"
+    },
+    {
+      "name": "color/primary-hover",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/600",
+      "css": "--cp-color-primary-hover",
+      "description": "Hover da primária"
+    },
+    {
+      "name": "color/primary-pressed",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/700",
+      "css": "--cp-color-primary-pressed",
+      "description": "Pressionado"
+    },
+    {
+      "name": "color/on-primary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/white",
+      "css": "--cp-color-on-primary",
+      "description": "Texto e ícone sobre a primária"
+    },
+    {
+      "name": "color/primary-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/50",
+      "css": "--cp-color-primary-container",
+      "description": "Fundo suave de seleção"
+    },
+    {
+      "name": "color/on-primary-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/700",
+      "css": "--cp-color-on-primary-container",
+      "description": "Conteúdo sobre primary-container"
+    },
+    {
+      "name": "color/secondary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "green/700",
+      "css": "--cp-color-secondary",
+      "description": "Ação de apoio, texto verde"
+    },
+    {
+      "name": "color/secondary-hover",
+      "type": "COLOR",
+      "value": null,
+      "alias": "green/900",
+      "css": "--cp-color-secondary-hover",
+      "description": "Hover da secundária"
+    },
+    {
+      "name": "color/on-secondary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/white",
+      "css": "--cp-color-on-secondary",
+      "description": "Conteúdo sobre a secundária"
+    },
+    {
+      "name": "color/secondary-accent",
+      "type": "COLOR",
+      "value": null,
+      "alias": "green/500",
+      "css": "--cp-color-secondary-accent",
+      "description": "Bloco de destaque e ilustração. Texto branco só grande"
+    },
+    {
+      "name": "color/tertiary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "blue/700",
+      "css": "--cp-color-tertiary",
+      "description": "Links e botões azuis"
+    },
+    {
+      "name": "color/tertiary-hover",
+      "type": "COLOR",
+      "value": null,
+      "alias": "blue/900",
+      "css": "--cp-color-tertiary-hover",
+      "description": "Hover de links e botões azuis"
+    },
+    {
+      "name": "color/on-tertiary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/white",
+      "css": "--cp-color-on-tertiary",
+      "description": "Conteúdo sobre a terciária"
+    },
+    {
+      "name": "color/tertiary-accent",
+      "type": "COLOR",
+      "value": null,
+      "alias": "blue/500",
+      "css": "--cp-color-tertiary-accent",
+      "description": "Ilustração e ícones grandes"
+    },
+    {
+      "name": "color/highlight",
+      "type": "COLOR",
+      "value": null,
+      "alias": "yellow/400",
+      "css": "--cp-color-highlight",
+      "description": "Tarjas, bordas e foco sobre vermelho. Nunca sobre branco"
+    },
+    {
+      "name": "color/on-highlight",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/900",
+      "css": "--cp-color-on-highlight",
+      "description": "Texto sobre amarelo"
+    },
+    {
+      "name": "color/surface",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/white",
+      "css": "--cp-color-surface",
+      "description": "Fundo padrão"
+    },
+    {
+      "name": "color/surface-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/50",
+      "css": "--cp-color-surface-container",
+      "description": "Fundo de seções, telas e trilhas"
+    },
+    {
+      "name": "color/on-surface",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/900",
+      "css": "--cp-color-on-surface",
+      "description": "Texto principal"
+    },
+    {
+      "name": "color/on-surface-variant",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/700",
+      "css": "--cp-color-on-surface-variant",
+      "description": "Texto secundário"
+    },
+    {
+      "name": "color/on-surface-inactive",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/900-a60",
+      "css": "--cp-color-on-surface-inactive",
+      "description": "Abas inativas (grafite 60%)"
+    },
+    {
+      "name": "color/outline",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/500",
+      "css": "--cp-color-outline",
+      "description": "Borda de inputs e controles (3:1)"
+    },
+    {
+      "name": "color/outline-variant",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/200",
+      "css": "--cp-color-outline-variant",
+      "description": "Divisórias e borda de cards"
+    },
+    {
+      "name": "color/disabled-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/200",
+      "css": "--cp-color-disabled-container",
+      "description": "Fundo de controle desabilitado"
+    },
+    {
+      "name": "color/on-disabled",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/500",
+      "css": "--cp-color-on-disabled",
+      "description": "Conteúdo desabilitado"
+    },
+    {
+      "name": "color/focus-ring",
+      "type": "COLOR",
+      "value": null,
+      "alias": "neutral/900",
+      "css": "--cp-color-focus-ring",
+      "description": "Anel de foco em fundo claro"
+    },
+    {
+      "name": "color/focus-ring-on-primary",
+      "type": "COLOR",
+      "value": null,
+      "alias": "yellow/400",
+      "css": "--cp-color-focus-ring-on-primary",
+      "description": "Anel de foco sobre vermelho"
+    },
+    {
+      "name": "color/error",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/700",
+      "css": "--cp-color-error",
+      "description": "Texto e borda de erro"
+    },
+    {
+      "name": "color/feedback/success-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "green/50",
+      "css": "--cp-success-bg",
+      "description": "Fundo de sucesso"
+    },
+    {
+      "name": "color/feedback/on-success-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "green/900",
+      "css": "--cp-success-text",
+      "description": "Texto de sucesso"
+    },
+    {
+      "name": "color/feedback/warning-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "yellow/50",
+      "css": "--cp-warning-bg",
+      "description": "Fundo de atenção"
+    },
+    {
+      "name": "color/feedback/on-warning-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "yellow/900",
+      "css": "--cp-warning-text",
+      "description": "Texto de atenção"
+    },
+    {
+      "name": "color/feedback/danger-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/50",
+      "css": "--cp-danger-bg",
+      "description": "Fundo de erro"
+    },
+    {
+      "name": "color/feedback/on-danger-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "red/700",
+      "css": "--cp-danger-text",
+      "description": "Texto de erro"
+    },
+    {
+      "name": "color/feedback/info-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "blue/50",
+      "css": "--cp-info-bg",
+      "description": "Fundo informativo"
+    },
+    {
+      "name": "color/feedback/on-info-container",
+      "type": "COLOR",
+      "value": null,
+      "alias": "blue/900",
+      "css": "--cp-info-text",
+      "description": "Texto informativo"
+    }
+  ],
+  "spacing": [
+    {
+      "name": "space/0",
+      "type": "FLOAT",
+      "value": 0,
+      "css": "--cp-space-0",
+      "description": ""
+    },
+    {
+      "name": "space/1",
+      "type": "FLOAT",
+      "value": 4,
+      "css": "--cp-space-1",
+      "description": ""
+    },
+    {
+      "name": "space/2",
+      "type": "FLOAT",
+      "value": 8,
+      "css": "--cp-space-2",
+      "description": ""
+    },
+    {
+      "name": "space/3",
+      "type": "FLOAT",
+      "value": 12,
+      "css": "--cp-space-3",
+      "description": ""
+    },
+    {
+      "name": "space/4",
+      "type": "FLOAT",
+      "value": 16,
+      "css": "--cp-space-4",
+      "description": "Padding de cards"
+    },
+    {
+      "name": "space/6",
+      "type": "FLOAT",
+      "value": 24,
+      "css": "--cp-space-6",
+      "description": "Gutter"
+    },
+    {
+      "name": "space/8",
+      "type": "FLOAT",
+      "value": 32,
+      "css": "--cp-space-8",
+      "description": ""
+    },
+    {
+      "name": "space/12",
+      "type": "FLOAT",
+      "value": 48,
+      "css": "--cp-space-12",
+      "description": "Entre seções (mobile)"
+    },
+    {
+      "name": "space/16",
+      "type": "FLOAT",
+      "value": 64,
+      "css": "--cp-space-16",
+      "description": "Entre seções (desktop)"
+    }
+  ],
+  "radius": [
+    {
+      "name": "radius/none",
+      "type": "FLOAT",
+      "value": 0,
+      "css": "--cp-radius-none",
+      "description": ""
+    },
+    {
+      "name": "radius/sm",
+      "type": "FLOAT",
+      "value": 4,
+      "css": "--cp-radius-sm",
+      "description": "Tags"
+    },
+    {
+      "name": "radius/md",
+      "type": "FLOAT",
+      "value": 8,
+      "css": "--cp-radius-md",
+      "description": "Cards e campos"
+    },
+    {
+      "name": "radius/lg",
+      "type": "FLOAT",
+      "value": 16,
+      "css": "--cp-radius-lg",
+      "description": "Modais"
+    },
+    {
+      "name": "radius/pill",
+      "type": "FLOAT",
+      "value": 999,
+      "css": "--cp-radius-pill",
+      "description": "Botões"
+    }
+  ],
+  "size": [
+    {
+      "name": "size/touch-target",
+      "type": "FLOAT",
+      "value": 44,
+      "css": "--cp-size-touch",
+      "description": "Área de toque mínima"
+    },
+    {
+      "name": "size/control-sm",
+      "type": "FLOAT",
+      "value": 36,
+      "css": "--cp-size-control-sm",
+      "description": "Só desktop"
+    },
+    {
+      "name": "size/control-md",
+      "type": "FLOAT",
+      "value": 44,
+      "css": "--cp-size-control-md",
+      "description": "Padrão"
+    },
+    {
+      "name": "size/control-lg",
+      "type": "FLOAT",
+      "value": 52,
+      "css": "--cp-size-control-lg",
+      "description": ""
+    },
+    {
+      "name": "size/icon-sm",
+      "type": "FLOAT",
+      "value": 20,
+      "css": "--cp-size-icon-sm",
+      "description": ""
+    },
+    {
+      "name": "size/icon-md",
+      "type": "FLOAT",
+      "value": 24,
+      "css": "--cp-size-icon-md",
+      "description": ""
+    },
+    {
+      "name": "size/logo-min",
+      "type": "FLOAT",
+      "value": 120,
+      "css": "--cp-size-logo-min",
+      "description": "Largura mínima do logo"
+    }
+  ],
+  "border": [
+    {
+      "name": "border/default",
+      "type": "FLOAT",
+      "value": 1,
+      "css": "--cp-border-width",
+      "description": ""
+    },
+    {
+      "name": "border/strong",
+      "type": "FLOAT",
+      "value": 2,
+      "css": "--cp-border-width-strong",
+      "description": ""
+    },
+    {
+      "name": "border/accent",
+      "type": "FLOAT",
+      "value": 4,
+      "css": "--cp-border-width-accent",
+      "description": "Faixa lateral de alertas e sublinhado ativo"
+    }
+  ],
+  "text": [
+    {
+      "name": "Display",
+      "weight": 900,
+      "min": 36,
+      "max": 56,
+      "lineHeight": 1,
+      "case": "uppercase",
+      "css": "--cp-text-display"
+    },
+    {
+      "name": "H1",
+      "weight": 900,
+      "min": 32,
+      "max": 40,
+      "lineHeight": 1.1,
+      "case": "none",
+      "css": "--cp-text-h1"
+    },
+    {
+      "name": "H2",
+      "weight": 800,
+      "min": 26,
+      "max": 32,
+      "lineHeight": 1.15,
+      "case": "none",
+      "css": "--cp-text-h2"
+    },
+    {
+      "name": "H3",
+      "weight": 700,
+      "min": 20,
+      "max": 24,
+      "lineHeight": 1.25,
+      "case": "none",
+      "css": "--cp-text-h3"
+    },
+    {
+      "name": "Title",
+      "weight": 800,
+      "min": 16,
+      "max": 16,
+      "lineHeight": 1.25,
+      "case": "none",
+      "css": "--cp-text-title"
+    },
+    {
+      "name": "Body Large",
+      "weight": 500,
+      "min": 18,
+      "max": 18,
+      "lineHeight": 1.55,
+      "case": "none",
+      "css": "--cp-text-lg"
+    },
+    {
+      "name": "Body",
+      "weight": 500,
+      "min": 16,
+      "max": 16,
+      "lineHeight": 1.55,
+      "case": "none",
+      "css": "--cp-text-md"
+    },
+    {
+      "name": "Body Small",
+      "weight": 500,
+      "min": 14,
+      "max": 14,
+      "lineHeight": 1.45,
+      "case": "none",
+      "css": "--cp-text-sm"
+    },
+    {
+      "name": "Body Small Strong",
+      "weight": 700,
+      "min": 14,
+      "max": 14,
+      "lineHeight": 1.45,
+      "case": "none",
+      "css": "--cp-text-sm-strong"
+    },
+    {
+      "name": "Label Large",
+      "weight": 700,
+      "min": 16,
+      "max": 16,
+      "lineHeight": 1,
+      "case": "none",
+      "css": "--cp-text-label-lg"
+    },
+    {
+      "name": "Label Medium",
+      "weight": 700,
+      "min": 14,
+      "max": 14,
+      "lineHeight": 1,
+      "case": "none",
+      "css": "--cp-text-label-md"
+    },
+    {
+      "name": "Label Small",
+      "weight": 800,
+      "min": 12,
+      "max": 12,
+      "lineHeight": 1,
+      "case": "uppercase",
+      "letterSpacing": "0.08em",
+      "css": "--cp-text-xs"
+    },
+    {
+      "name": "Label Tab",
+      "weight": 700,
+      "min": 12,
+      "max": 12,
+      "lineHeight": 1,
+      "case": "none",
+      "css": "--cp-text-tab"
+    }
+  ],
+  "effects": [
+    {
+      "name": "shadow-1",
+      "description": "Cards. Só para mostrar camada",
+      "value": "0 1px 2px #2A2A2A14, 0 2px 6px #2A2A2A0F",
+      "css": "--cp-shadow-1"
+    },
+    {
+      "name": "shadow-2",
+      "description": "Menus e folhas",
+      "value": "0 1px 3px #2A2A2A14, 0 4px 12px #2A2A2A1F",
+      "css": "--cp-shadow-2"
+    },
+    {
+      "name": "focus-light",
+      "description": "3 px branco + 3 px grafite",
+      "value": "0 0 0 3px #FFFFFF, 0 0 0 6px #2A2A2A",
+      "css": "--cp-focus-light"
+    },
+    {
+      "name": "focus-red",
+      "description": "Anel amarelo de 3 px sobre vermelho",
+      "value": "0 0 0 3px #FBCE02",
+      "css": "--cp-focus-red"
+    }
+  ]
+} as const;

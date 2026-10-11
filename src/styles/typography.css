@@ -1,0 +1,14 @@
+/* Gerado por scripts/build-tokens.mjs. */
+.cp-text-display { font-family: var(--cp-font); font-size: var(--cp-text-display); font-weight: 900; line-height: 1; text-transform: uppercase; }
+.cp-text-h1 { font-family: var(--cp-font); font-size: var(--cp-text-h1); font-weight: 900; line-height: 1.1; }
+.cp-text-h2 { font-family: var(--cp-font); font-size: var(--cp-text-h2); font-weight: 800; line-height: 1.15; }
+.cp-text-h3 { font-family: var(--cp-font); font-size: var(--cp-text-h3); font-weight: 700; line-height: 1.25; }
+.cp-text-title { font-family: var(--cp-font); font-size: var(--cp-text-title); font-weight: 800; line-height: 1.25; }
+.cp-text-body-large { font-family: var(--cp-font); font-size: var(--cp-text-lg); font-weight: 500; line-height: 1.55; }
+.cp-text-body { font-family: var(--cp-font); font-size: var(--cp-text-md); font-weight: 500; line-height: 1.55; }
+.cp-text-body-small { font-family: var(--cp-font); font-size: var(--cp-text-sm); font-weight: 500; line-height: 1.45; }
+.cp-text-body-small-strong { font-family: var(--cp-font); font-size: var(--cp-text-sm-strong); font-weight: 700; line-height: 1.45; }
+.cp-text-label-large { font-family: var(--cp-font); font-size: var(--cp-text-label-lg); font-weight: 700; line-height: 1; }
+.cp-text-label-medium { font-family: var(--cp-font); font-size: var(--cp-text-label-md); font-weight: 700; line-height: 1; }
+.cp-text-label-small { font-family: var(--cp-font); font-size: var(--cp-text-xs); font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: 0.08em; }
+.cp-text-label-tab { font-family: var(--cp-font); font-size: var(--cp-text-tab); font-weight: 700; line-height: 1; }
