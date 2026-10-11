@@ -29,7 +29,7 @@
     "tokens": "node scripts/build-tokens.mjs",
     "dev": "storybook dev -p 6006",
     "build": "npm run tokens && vite build && tsc -p tsconfig.build.json && node scripts/postbuild.mjs",
-    "build-storybook": "npm run tokens && storybook build -o storybook-static",
+    "build-storybook": "npm run tokens && storybook build -o storybook-static && node scripts/postbuild-storybook.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
