@@ -9,7 +9,7 @@ export interface LogoProps extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'sr
   alt?: string;
 }
 
-/** Selo Bora Lula. O texto alternativo segue o guia: "Comitê Popular do Lula". */
+/** Selo circular "L 13" do Bora Lula. O texto alternativo segue o guia: "Comitê Popular do Lula". */
 export function Logo({ size = 56, src = defaultLogo, alt = 'Comitê Popular do Lula', style, ...rest }: LogoProps) {
-  return <img src={src} alt={alt} width={size} height={size} style={{ display: 'block', borderRadius: 4, ...style }} {...rest} />;
+  return <img src={src} alt={alt} width={size} height={size} style={{ display: 'block', borderRadius: '50%', ...style }} {...rest} />;
 }

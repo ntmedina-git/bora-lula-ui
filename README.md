@@ -64,5 +64,5 @@ Só tokens: `@import '@boralula/ui/tokens.css';` · Tailwind: `presets: [require
 - **Ícones do lucide-react**, os mesmos da biblioteca do Figma (traço 2 px, pontas arredondadas).
 - **Montserrat via @fontsource**, só os pesos 500/700/800/900 e o subconjunto latino, com `font-display: swap`.
 - **Inputs nativos** em Checkbox e SelectionOption, para teclado e leitor de tela funcionarem sem JavaScript extra.
-- **Logo:** `src/assets/logo-bora-lula.png` tem 84 px (exportado do Figma). Troque por uma versão em alta resolução ou passe `src` no `<Logo>`.
+- **Logo:** `src/assets/logo-bora-lula.png` é o selo circular "L 13" (500 px, fundo transparente, exportado do Figma, nó `64:620`). Para outra versão, passe `src` no `<Logo>`.
 - **Não há modo escuro**: o guia não define. A estrutura de papéis já permite criar um tema sobrescrevendo as variáveis `--cp-color-*`.
