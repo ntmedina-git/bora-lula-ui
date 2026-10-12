@@ -3,7 +3,7 @@
 Biblioteca de componentes React do Comitê Popular / Bora Lula, com tokens, componentes e regras de acessibilidade do **Guia de Interface Web e Apps**. Organização inspirada no Material 3: primitivos → papéis semânticos → componentes.
 
 - **Figma:** arquivo Bora-Lula, frame **Library** (fonte do design).
-- **Guideline:** Storybook deste repositório (`npm run dev`), com páginas de foundations, regras e todos os componentes.
+- **Guideline:** Storybook publicado em https://www.ntmedina.com/bora-lula-ui (ou local com `npm run dev`), com páginas de foundations, regras e todos os componentes.
 
 ## Uso
 
