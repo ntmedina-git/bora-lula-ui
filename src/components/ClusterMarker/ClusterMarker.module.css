@@ -1,0 +1,19 @@
+.marker {
+  display: inline-grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  border: var(--cp-border-width-strong) solid var(--cp-white);
+  border-radius: var(--cp-radius-pill);
+  background: var(--cp-color-primary);
+  box-shadow: var(--cp-shadow-1);
+  color: var(--cp-white);
+  font-family: var(--cp-font);
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+.marker:hover { background: var(--cp-color-primary-hover); }
+.marker:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+.small { min-width: 28px; height: 28px; font-size: var(--cp-text-xs); }
+.large { min-width: 36px; height: 36px; padding-inline: var(--cp-space-1); font-size: var(--cp-text-sm); }

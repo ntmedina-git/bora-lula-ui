@@ -1,0 +1,13 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: 1px 9px;
+  border: var(--cp-border-width) solid var(--cp-color-outline-variant);
+  border-radius: var(--cp-radius-pill);
+  background: var(--cp-color-surface-container);
+  color: var(--cp-color-on-surface-variant);
+  font: 700 var(--cp-text-xs) / 1.4 var(--cp-font);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}

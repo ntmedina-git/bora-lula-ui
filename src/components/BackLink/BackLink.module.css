@@ -1,0 +1,13 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  min-height: var(--cp-size-touch);
+  border-radius: var(--cp-radius-sm);
+  color: var(--cp-color-on-surface-variant);
+  font: 500 var(--cp-text-sm) / 1.55 var(--cp-font);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.link:hover { color: var(--cp-color-on-surface); }
+.link:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }

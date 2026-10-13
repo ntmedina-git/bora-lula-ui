@@ -42,6 +42,24 @@ Só tokens: `@import '@boralula/ui/tokens.css';` · Tailwind: `presets: [require
 | `NavigationBar` | Navigation bar | Navigation bar, Navigation item |
 | `Logo` | — | Brand/Logo |
 
+### Agenda
+
+Componentes da agenda de ações do boralula.org (Figma: seção **Componentes · agenda**, 18 a 25). No Storybook ficam no grupo **Agenda**.
+
+| Componente | Equivalente M3 | Figma |
+| --- | --- | --- |
+| `SearchBar`, `SearchSegment` | Search bar | Search bar, Search segment |
+| `SearchField` | Search bar | Search field |
+| `FilterChip` | Filter chip | Filter chip |
+| `LayerChip` | — (rádio em cartão) | Layer chip |
+| `ActionCard`, `Poster`, `TimeBadge`, `FavoriteButton` | Card / Icon toggle button | Action card, Poster, Time badge, Favorite button |
+| `ActionRow`, `Organizer`, `StatusTag` | List item | Action row, Organizer, Status tag |
+| `SectionHeader`, `StatGroup`, `Callout`, `CtaBlock`, `Footer` | — | Section header, Stat group, Callout, CTA block, Footer |
+| `SchedulePanel`, `ShortcutButton`, `BackLink` | — | Schedule panel, Shortcut button, Back link |
+| `MapLabel`, `ClusterMarker`, `ListPanelHeader` | — | Map label, Cluster marker, List panel header |
+| `TopicTile`, `FaqItem`, `GoogleSignInButton` | — | Topic tile, FAQ item, Google sign-in button |
+| `AgendaTopBar`, `AccountButton`, `AgendaWordmark` | Top app bar | Agenda top bar, Agenda nav item, Account button, Brand/Wordmark Agenda |
+
 ## Scripts
 
 | Script | O que faz |
@@ -60,9 +78,10 @@ Só tokens: `@import '@boralula/ui/tokens.css';` · Tailwind: `presets: [require
 
 ## Decisões
 
-- **CSS Modules + variáveis CSS**, sem runtime de CSS-in-JS: leve para conexões fracas (CSS da lib com ~26 KB).
+- **CSS Modules + variáveis CSS**, sem runtime de CSS-in-JS: leve para conexões fracas (CSS da lib com ~50 KB, ~9 KB com gzip).
 - **Ícones do lucide-react**, os mesmos da biblioteca do Figma (traço 2 px, pontas arredondadas).
 - **Montserrat via @fontsource**, só os pesos 500/700/800/900 e o subconjunto latino, com `font-display: swap`.
 - **Inputs nativos** em Checkbox e SelectionOption, para teclado e leitor de tela funcionarem sem JavaScript extra.
+- **Marca da Agenda:** `src/assets/wordmark-agenda.svg` é o Brand/Wordmark Agenda exportado do Figma (nó `135:819`), em branco para a barra vermelha.
 - **Logo:** `src/assets/logo-bora-lula.png` é o selo circular "L 13" (500 px, fundo transparente, exportado do Figma, nó `64:620`). Para outra versão, passe `src` no `<Logo>`.
 - **Não há modo escuro**: o guia não define. A estrutura de papéis já permite criar um tema sobrescrevendo as variáveis `--cp-color-*`.

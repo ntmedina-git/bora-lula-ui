@@ -1,0 +1,4 @@
+.footer { display: flex; flex-direction: column; align-items: center; gap: var(--cp-space-2); box-sizing: border-box; max-width: 640px; margin-inline: auto; padding: var(--cp-space-6) var(--cp-space-4); color: var(--cp-color-on-surface-variant); font-family: var(--cp-font); font-weight: 500; text-align: center; }
+.note { margin: 0; font-size: var(--cp-text-xs); line-height: 1.5; }
+.text { margin: 0; font-size: var(--cp-text-sm); line-height: 1.45; }
+.links { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--cp-space-2) var(--cp-space-4); }

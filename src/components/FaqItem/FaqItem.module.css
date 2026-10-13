@@ -1,0 +1,22 @@
+.item { border-top: var(--cp-border-width) solid var(--cp-color-outline-variant); color: var(--cp-color-on-surface); font-family: var(--cp-font); }
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding-block: 10px;
+  border-radius: var(--cp-radius-sm);
+  font-size: var(--cp-text-md);
+  font-weight: 700;
+  line-height: 1.55;
+  list-style: none;
+  cursor: pointer;
+}
+.summary::-webkit-details-marker { display: none; }
+.summary:hover { text-decoration: underline; }
+.summary:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+.marker { flex: none; font-size: 10px; line-height: 1; transition: transform var(--cp-motion) ease; }
+.item[open] .marker { transform: rotate(90deg); }
+.answer { margin-top: 2px; padding-bottom: 10px; font-size: var(--cp-text-md); font-weight: 500; line-height: 1.55; }
+.answer > :first-child { margin-top: 0; }
+.answer > :last-child { margin-bottom: 0; }

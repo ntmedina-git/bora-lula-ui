@@ -1,0 +1,22 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-sizing: border-box;
+  min-height: var(--cp-size-touch);
+  padding: var(--cp-space-2) var(--cp-space-4);
+  border: 1.5px solid var(--cp-color-outline);
+  border-radius: var(--cp-radius-pill);
+  background: var(--cp-color-surface);
+  color: var(--cp-color-on-surface);
+  font: 500 var(--cp-text-sm) / 1.45 var(--cp-font);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--cp-motion-fast) ease;
+}
+.chip:hover { background: var(--cp-color-surface-container); }
+.chip:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+.chip:disabled { border-color: var(--cp-color-disabled-container); color: var(--cp-color-on-disabled); cursor: not-allowed; }
+.check { width: 18px; height: 18px; flex: none; }
+.selected,
+.selected:hover { border-color: var(--cp-color-primary); background: var(--cp-color-primary-container); color: var(--cp-color-on-primary-container); font-weight: 700; }

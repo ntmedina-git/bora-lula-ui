@@ -1,0 +1,44 @@
+/* Medidas em cqw a partir do Figma (card de 242 px, thumb de 72 px) para o cartaz escalar inteiro. */
+.poster {
+  position: relative;
+  overflow: hidden;
+  container-type: inline-size;
+  color: var(--cp-white);
+  font-family: var(--cp-font);
+}
+.poster::before {
+  content: '';
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--cp-white) 8%, transparent);
+}
+.inner { position: relative; display: flex; flex-direction: column; box-sizing: border-box; height: 100%; }
+
+.red { background: var(--cp-red-500); }
+.green { background: var(--cp-green-700); }
+.blue { background: var(--cp-blue-700); }
+.wine { background: var(--cp-red-700); }
+
+.card { width: 100%; aspect-ratio: 4 / 5; }
+.card::before { top: -14.5%; right: -18.16%; width: 69.83%; }
+.card .inner { justify-content: flex-end; align-items: flex-start; gap: 2.9cqw; padding: 9.09cqw 7.85cqw; }
+.stamp {
+  margin-bottom: 0.4cqw;
+  padding: 0.83cqw 2.48cqw;
+  background: var(--cp-color-highlight);
+  color: var(--cp-color-on-highlight);
+  font-size: 5.17cqw;
+  font-weight: 900;
+  line-height: 1.26;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+}
+.card .type { font-size: 8.02cqw; font-weight: 900; line-height: 0.92; text-transform: uppercase; }
+.place { font-size: 5.99cqw; font-weight: 700; line-height: 1.2; }
+
+.thumb { flex: none; width: 72px; aspect-ratio: 1; border-radius: var(--cp-radius-md); }
+.thumb::before { top: -14.44%; right: -14.44%; width: 55.56%; }
+.thumb .inner { justify-content: center; align-items: center; padding: 8.33cqw 5.56cqw; }
+.thumb .type { font-size: 13.89cqw; font-weight: 900; line-height: 1; text-align: center; text-transform: uppercase; overflow-wrap: anywhere; }

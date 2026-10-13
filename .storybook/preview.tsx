@@ -28,7 +28,10 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ['Introdução', 'Começando', 'Foundations', ['Cores', 'Tipografia', 'Espaço e forma', 'Elevação e foco', 'Grid', 'Ícones'], 'Regras', 'Componentes', 'Padrões', 'Exemplos'],
+        order: ['Introdução', 'Começando', 'Foundations', ['Cores', 'Tipografia', 'Espaço e forma', 'Elevação e foco', 'Grid', 'Ícones'], 'Regras', 'Componentes',
+          // Mesma ordem das seções 18 a 25 do Figma (Componentes · agenda)
+          'Agenda', ['SearchBar', 'SearchField', 'FilterChip', 'LayerChip', 'ActionCard', 'Poster', 'TimeBadge', 'FavoriteButton', 'Organizer', 'StatusTag', 'ActionRow', 'SectionHeader', 'StatGroup', 'Callout', 'CtaBlock', 'Footer', 'SchedulePanel', 'ShortcutButton', 'BackLink', 'MapLabel', 'ClusterMarker', 'ListPanelHeader', 'TopicTile', 'FaqItem', 'GoogleSignInButton', 'AgendaTopBar'],
+          'Padrões', 'Exemplos'],
       },
     },
   },

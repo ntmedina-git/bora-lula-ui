@@ -1,0 +1,21 @@
+.header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--cp-space-2) var(--cp-space-4); font-family: var(--cp-font); }
+.heading { display: flex; flex-direction: column; gap: var(--cp-space-2); min-width: 0; }
+.title { margin: 0; color: var(--cp-color-on-surface); font-size: var(--cp-text-h2); font-weight: 800; line-height: 1.15; }
+.city {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2em;
+  padding: 0;
+  border: 0;
+  border-radius: var(--cp-radius-sm);
+  background: none;
+  color: var(--cp-color-primary);
+  font: inherit;
+  cursor: pointer;
+}
+.cityName { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+.city:hover { color: var(--cp-color-primary-pressed); }
+.city:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+.caret { align-self: center; font-size: 0.6em; }
+.subtitle { margin: 0; color: var(--cp-color-on-surface-variant); font-size: var(--cp-text-sm); font-weight: 500; line-height: 1.45; }
+.action { flex: none; padding-bottom: 2px; }

@@ -1,0 +1,12 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--cp-space-1) 10px;
+  border-radius: var(--cp-radius-sm);
+  font: 800 var(--cp-text-xs) / 1 var(--cp-font);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.default { background: var(--cp-color-surface); color: var(--cp-color-on-surface); box-shadow: var(--cp-shadow-1); }
+.online { background: var(--cp-color-tertiary); color: var(--cp-color-on-tertiary); }

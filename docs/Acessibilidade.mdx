@@ -14,7 +14,7 @@ Cada item vem do Guia de Interface. Todas as histórias deste Storybook passam p
 | ☐ | **Não depender só da cor.** Erros, status e abas ativas também têm ícone, texto ou sublinhado. | Alert e TextField com ícone; abas e navegação com sublinhado; seleção com check. |
 | ☐ | **Imagens com texto alternativo.** Fotos de atos descrevem a cena. O logo usa `alt="Comitê Popular do Lula"`. | `Logo` já vem com o alt; `BrandStripes` é decorativo e escondido. |
 | ☐ | **Formulários claros.** Rótulos visíveis, `autocomplete` e erros que dizem como corrigir. | `TextField` exige `label` e liga ajuda/erro por `aria-describedby`. |
-| ☐ | **Leve para conexões fracas.** WebP/AVIF com `loading="lazy"`, só os pesos de fonte usados, página inicial abaixo de 1 MB. | `fonts.css` carrega só 4 pesos do subconjunto latino; CSS da biblioteca com ~26 KB. |
+| ☐ | **Leve para conexões fracas.** WebP/AVIF com `loading="lazy"`, só os pesos de fonte usados, página inicial abaixo de 1 MB. | `fonts.css` carrega só 4 pesos do subconjunto latino; CSS da biblioteca com ~50 KB (~9 KB com gzip). |
 | ☐ | **Movimento opcional.** Até 200 ms e desligado com `prefers-reduced-motion`. | Tokens de duração zeram sozinhos. |
 | ☐ | **Idioma e leitura.** `lang="pt-BR"`, frases curtas, verbos de ação nos botões. | Textos internos dos componentes já em pt-BR ("Fechar aviso", "Abrir menu"). |
 | ☐ | **Testado no celular de verdade.** Android de entrada, tela de 360 px, antes de divulgar o link. | Viewport "Android de entrada (360)" na barra do Storybook. |

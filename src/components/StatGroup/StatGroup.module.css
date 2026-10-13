@@ -1,0 +1,22 @@
+.group { display: flex; align-items: center; margin: 0; padding: 0; list-style: none; font-family: var(--cp-font); }
+.stat { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.value { font-weight: 900; line-height: 1; }
+.label { font-size: var(--cp-text-xs); font-weight: 600; line-height: 1.2; }
+
+.light { gap: var(--cp-space-3); }
+.light .stat { flex: 0 1 165px; gap: var(--cp-space-1); min-width: 0; }
+.light .value { color: var(--cp-color-primary); font-size: 26px; }
+.light .label { color: var(--cp-color-on-surface-variant); }
+
+/* Sobre fotos: scrim grafite 60%, borda branca 24%. Amarelo só sobre fundo escuro. */
+.map {
+  display: inline-flex;
+  padding: var(--cp-space-3) var(--cp-space-1);
+  border: var(--cp-border-width) solid color-mix(in srgb, var(--cp-white) 24%, transparent);
+  border-radius: var(--cp-radius-lg);
+  background: var(--cp-ink-60);
+}
+.map .stat { position: relative; gap: 6px; padding-inline: 18px; }
+.map .stat + .stat::before { content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 40px; translate: 0 -50%; background: color-mix(in srgb, var(--cp-white) 24%, transparent); }
+.map .value { color: var(--cp-color-highlight); font-size: 34px; }
+.map .label { color: var(--cp-white); white-space: nowrap; }

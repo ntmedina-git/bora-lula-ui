@@ -153,7 +153,7 @@ export function EffectSamples() {
   );
 }
 
-export const ICON_NAMES = ['Check', 'X', 'Plus', 'Minus', 'ChevronLeft', 'ChevronRight', 'ChevronDown', 'ArrowRight', 'Menu', 'Search', 'House', 'Calendar', 'Megaphone', 'User', 'Users', 'Info', 'CircleAlert', 'TriangleAlert', 'CircleCheck', 'Clock', 'MapPin', 'Video', 'Share2', 'ExternalLink'] as const;
+export const ICON_NAMES = ['Check', 'X', 'Plus', 'Minus', 'ChevronLeft', 'ChevronRight', 'ChevronDown', 'ArrowRight', 'Menu', 'Search', 'House', 'Calendar', 'Megaphone', 'User', 'Users', 'Info', 'CircleAlert', 'TriangleAlert', 'CircleCheck', 'Clock', 'MapPin', 'Video', 'Share2', 'ExternalLink', 'Heart', 'Map', 'SlidersHorizontal', 'ChartColumn', 'CircleHelp', 'CircleUser', 'Ellipsis'] as const;
 
 export function IconGrid() {
   return (

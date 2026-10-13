@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--cp-space-2);
+  box-sizing: border-box;
+  min-height: 46px;
+  padding: 10px var(--cp-space-6);
+  border: 0;
+  border-radius: var(--cp-radius-pill);
+  background: var(--cp-color-on-surface);
+  color: var(--cp-white);
+  font: 700 var(--cp-text-label-lg) / 1 var(--cp-font);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color var(--cp-motion-fast) ease;
+}
+.button:hover { background: color-mix(in srgb, var(--cp-color-on-surface) 88%, var(--cp-white)); }
+.button:focus-visible { outline: none; box-shadow: var(--cp-focus-light); }
+.badge {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--cp-white);
+  color: var(--cp-color-primary);
+  font-size: var(--cp-text-sm);
+  font-weight: 800;
+  line-height: 1.2;
+}
